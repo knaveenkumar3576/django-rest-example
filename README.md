@@ -38,13 +38,13 @@ A REST api written in Django for people with deadlines
     ```bash
         $ python manage.py runserver
     ```
-    API Documentation
+* #### API Documentation
 
-    POST  http://localhost:8000/<player-name>/<score>
     ```bash
+        POST  http://localhost:8000/player-name/score
         Insert a score for a player.
     ```
-    POST  http://localhost:8000/<player-name>
     ```bash
+        GET  http://localhost:8000/player-name
         Returns the current total score of the player. If there is no player with the given name, then response with 500 status is returned(with message 'No player registered with this name')
     ```    
